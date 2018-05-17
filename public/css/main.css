@@ -1,0 +1,9 @@
+#modal-auth{
+	display: none;
+}
+.alert-error{
+	border: 1px solid red;
+}
+.input-password-root_show-password .input-password-toggle-3XvdM::before{
+	    background-image: url(../img/openpass.svg); 
+}
