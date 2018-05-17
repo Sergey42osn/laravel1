@@ -59,6 +59,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="https://www.avito.st/s/cc/770519dbd970ec9286b6ad662a68d76e6a4495b3.js"></script> 
+  
     <script src="{{URL::asset('js/main.js')}}"></script>  
  <div id="counters-invisible" class="counters-invisible"></div>
 

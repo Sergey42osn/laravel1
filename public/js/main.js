@@ -101,4 +101,41 @@ jQuery( document ).ready(function() {
 		})
 
 	});
+
+		$( "#button_reg" ).click(function(e) {
+		event.preventDefault()
+		var postData = $( "#regform" ).serialize();
+
+		$.ajax({
+		  type: "POST",
+		  //dataType: 'json',
+		  url: '/register',
+		  data: postData,
+		  success: function(data){
+
+		  	console.log(data);
+
+		  	//$("#modal-auth").fadeOut();
+
+		  	//$(location).attr('href', '/profile');
+		  	
+		  },
+		  error: function(data){
+
+		  
+		  	//.email["0"]
+
+		  	}
+
+		 
+		  
+		})
+		//return false;
+
+	});
+
+	$( ".registration-form-phone-input.js-registration-form-phone-input" ).mouseover(function() {
+	  	console.log("111");
+	});
+
 });

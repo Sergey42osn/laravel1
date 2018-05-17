@@ -112,6 +112,12 @@ return [
       'password' => [
         'required' => 'Введите пароль',
       ],
+      'name' => [
+        'required' => 'Введите имя',
+      ],
+      'phone' => [
+        'required' => 'Введите телефон',
+      ],
     ],
 
 

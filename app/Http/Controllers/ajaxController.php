@@ -47,8 +47,24 @@ class ajaxController extends Controller
 
     }
 
-    public function loginreg()
+    public function loginreg(Request $request)
     {
-        # code...
+        $validator = Validator::make($request->all(),[
+
+                        'name'       => 'required',
+                        'email'      => 'required|unique|email',
+                        'phone'      => 'required',
+                        'password'   => 'required',
+
+                    ]);
+
+        if ($validator->passes()) 
+        {
+
+            return response()->json(['success'=>'Вы авторизованы']);
+            
+        }
+
+        return response()->json(['error'=>$validator->errors()->all()]);
     }
 }
