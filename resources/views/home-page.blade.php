@@ -1,8 +1,5 @@
 @extends('layouts.layout')
 
-  <!--@include('layouts.search')-->
-
-
   @section('search')
 
   @include('layouts.search')

@@ -5,9 +5,14 @@
 <div class="g_123 layout-content-wrap"> <div class="l-content js-l-content clearfix">
   <div class="login-form">
  
- <form method="post" id="regform" class="form registration-form js-registration-form" novalidate="" autocomplete="off"> <h2 class="login-form-title">Регистрация</h2> <div class="form-fieldset form-fieldset_grid"> <label class="form-radio registration-form-radio-inline"> <input class="js-registration-form-type" type="radio" name="type" value="0" tabindex="1" checked=""> <span class="form-radio__label">Частное лицо</span> </label> <label class="form-radio registration-form-radio-inline"> <input class="js-registration-form-type" type="radio" name="type" value="1" tabindex="1"> <span class="form-radio__label">Компания</span> </label> </div> <div class="form-fieldset form-fieldset_grid"> <input type="text" maxlength="30" name="name" value="" placeholder="Ваше имя" class="login-form-input js-registration-form-name" tabindex="2"> <div class="form-fieldset__error js-form-fieldset__error js-registration-form-name-error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help js-registration-form-name-help">Чтобы общаться с покупателями в чате</div> </div> <div class="form-fieldset form-fieldset_grid registration-form-manager"> <input type="text" placeholder="Контактное лицо" maxlength="30" class="login-form-input js-registration-form-manager-input" name="manager" value="" tabindex="3"> <div class="form-fieldset__error js-form-fieldset__error"></div> </div>
+ <form method="post" id="regform" class="form registration-form js-registration-form" novalidate="" autocomplete="off"> <h2 class="login-form-title">Регистрация</h2> <div class="form-fieldset form-fieldset_grid"> <label class="form-radio registration-form-radio-inline">
+  <input class="js-registration-form-type" type="radio" name="type" value="0" tabindex="1" checked=""><span class="form-radio__label">Частное лицо</span> </label> <label class="form-radio registration-form-radio-inline">
+  <input class="js-registration-form-type" type="radio" name="type" value="1" tabindex="1"> <span class="form-radio__label">Компания</span> </label> </div> <div class="form-fieldset form-fieldset_grid">
+    <input type="text" maxlength="30" name="name" value="" placeholder="Ваше имя" required="" class="login-form-input js-registration-form-name" tabindex="2"> <div class="form-fieldset__error js-form-fieldset__error js-registration-form-name-error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help js-registration-form-name-help">Чтобы общаться с покупателями в чате</div> </div> <div class="form-fieldset form-fieldset_grid registration-form-manager">
+      <input type="text" placeholder="Контактное лицо" maxlength="30" class="login-form-input js-registration-form-manager-input" name="manager" value="" tabindex="3" disabled>
+  <div class="form-fieldset__error js-form-fieldset__error"></div> </div>
   <div class="form-fieldset form-fieldset_grid">
-  <input type="email" placeholder="Электронная почта" maxlength="64" class="login-form-input js-registration-form-email" name="email" value="" tabindex="4" autocomplete="username email">
+  <input type="email" placeholder="Электронная почта" maxlength="64" class="login-form-input js-registration-form-email" name="email" value="" required="" tabindex="4" autocomplete="username email">
   <div class="form-fieldset__error js-form-fieldset__error is-hidden">
     </div> <div class="form-fieldset__help js-form-fieldset__help">Для входа на сайт и сообщений о ваших объявлениях</div> </div>
  
@@ -15,18 +20,24 @@
  Частные пользователи могут использовать только<br>
  мобильные номера телефонов
  </div> <a href="/info/mobile_phones?plain" class="i i-help js-new-window" data-width="620"></a> <div class="form-fieldset__error js-form-fieldset__error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help">Только мобильные номера телефонов</div> </div>
-   <input type="text" class="hidden js-registration-form-email-fake" maxlength="64" tabindex="-1">
+   <input type="text" class="hidden js-registration-form-email-fake" maxlength="64" required="" tabindex="-1">
  
  <div class="form-fieldset form-fieldset_grid js-registration-form-password form-password-enabled">
-  <input type="password" placeholder="Пароль" name="password" class="login-form-input form-password-input" maxlength="70" tabindex="6" autocomplete="new-password"><i class="form-password-eye"></i> <div class="form-fieldset__error js-form-fieldset__error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help">
+  <input type="password" placeholder="Пароль" name="password" required="" class="login-form-input form-password-input" maxlength="70" tabindex="6" autocomplete="new-password"><i class="form-password-eye"></i> <div class="form-fieldset__error js-form-fieldset__error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help">
  От 6 до 70 знаков со спецсимволами и цифрами
  </div> </div>
   <fieldset class="js-form-captcha form-fieldset form-captcha form-captcha-big is-visible  form-fieldset_grid ">
   <input type="text" class="form-captcha-input js-captcha-input" value="" autocomplete="off" autocapitalize="off" autocorrect="off" placeholder="Текст с картинки" name="captcha" tabindex="7"><img class="form-captcha-image js-form-captcha-image" src="/captcha?1526488510"><div class="js-form-captcha-refresh"> <i class="form-captcha-refresh"></i> <span class="pseudo-link">Обновить картинку</span> </div> <span class="form-fieldset__error js-form-fieldset__error"></span> </fieldset>
   
- <div class="form-fieldset form-fieldset_grid"> <label class="form-checkbox"> <input type="checkbox" name="subscribe" value="1" checked="" tabindex="8"> <span class="form-checkbox__label">Получать новости и специальные предложения Авито</span> </label> </div> <div class="form-fieldset form-fieldset_grid login-form-submit-fieldset">
- {{ csrf_field() }}
-  <button id="button_reg" type="submit" class="button button-origin button-origin-green button-origin_large js-submit-button" tabindex="9">Зарегистрироваться</button>
+ <div class="form-fieldset form-fieldset_grid">
+  <label class="form-checkbox">
+    <input type="checkbox" name="subscribe" value="1" checked="" tabindex="8">
+      <span class="form-checkbox__label">Получать новости и специальные предложения Авито</span>
+  </label>
+</div>
+<div class="form-fieldset form-fieldset_grid login-form-submit-fieldset">
+        {{ csrf_field() }}
+    <button id="button_reg" type="submit" class="button button-origin button-origin-green button-origin_large js-submit-button" tabindex="9">Зарегистрироваться</button>
 </div>
 <div class="registration-form-fields-helper js-smart-helper">
  Введите:

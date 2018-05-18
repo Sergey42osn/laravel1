@@ -118,6 +118,9 @@ return [
       'phone' => [
         'required' => 'Введите телефон',
       ],
+      'manager' => [
+        'required' => 'Введите имя',
+      ],
     ],
 
 

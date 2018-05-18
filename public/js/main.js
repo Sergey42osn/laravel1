@@ -105,7 +105,7 @@ jQuery( document ).ready(function() {
 		$( "#button_reg" ).click(function(e) {
 		event.preventDefault()
 		var postData = $( "#regform" ).serialize();
-
+			console.log(postData);
 		$.ajax({
 		  type: "POST",
 		  //dataType: 'json',
@@ -137,5 +137,35 @@ jQuery( document ).ready(function() {
 	$( ".registration-form-phone-input.js-registration-form-phone-input" ).mouseover(function() {
 	  	console.log("111");
 	});
+
+
+	 $('.form-radio input[type=radio]').change(function(){
+     // alert ( $(this).val() );
+
+     	var val = $(this).val();
+     	if (val == 1) 
+     	{
+     		$('.login-form form').addClass('registration-form_company');
+     		$( '.registration-form-manager input[name=manager]' ).prop('disabled',false);
+     		$( '.form-fieldset input[name=name]' ).prop('placeholder','Название компании');
+     	} 
+     	else if(val == 0) 
+     	{
+     		$('.login-form form').removeClass('registration-form_company');
+     		$( '.registration-form-manager input[name=manager]' ).prop('disabled',true);
+     		$( '.form-fieldset input[name=name]' ).prop('placeholder','Ваше Имя');
+     	}
+
+
+      });
+
+	  $('.form-checkbox input[name=subscribe]').change(function(){
+     // alert ( $(this).val() );
+
+     	var val = $(this).val();
+
+
+      });
+
 
 });

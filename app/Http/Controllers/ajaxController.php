@@ -48,8 +48,25 @@ class ajaxController extends Controller
     }
 
     public function loginreg(Request $request)
-    {
-        $validator = Validator::make($request->all(),[
+    {   
+
+        if(isset($_POST['manager']))
+        {
+            $validator = Validator::make($request->all(),[
+
+                        'name'       => 'required',
+                        'email'      => 'required|unique|email',
+                        'manager'    => 'required',
+                        'phone'      => 'required',
+                        'password'   => 'required',
+
+                    ]);
+
+        }
+        else
+         {
+            
+             $validator = Validator::make($request->all(),[
 
                         'name'       => 'required',
                         'email'      => 'required|unique|email',
@@ -58,6 +75,10 @@ class ajaxController extends Controller
 
                     ]);
 
+        }
+
+       
+
         if ($validator->passes()) 
         {
 
@@ -65,6 +86,6 @@ class ajaxController extends Controller
             
         }
 
-        return response()->json(['error'=>$validator->errors()->all()]);
+       return response()->json(['error'=>$validator->errors()->all()]);
     }
 }
