@@ -103,7 +103,7 @@ jQuery( document ).ready(function() {
 	});
 
 		$( "#button_reg" ).click(function(e) {
-		event.preventDefault()
+		e.preventDefault()
 		var postData = $( "#regform" ).serialize();
 			console.log(postData);
 		$.ajax({
