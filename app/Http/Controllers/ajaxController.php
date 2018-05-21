@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
+use App\User;
+
 class ajaxController extends Controller
 {
 	public function show()
@@ -48,39 +50,30 @@ class ajaxController extends Controller
     }
 
     public function loginreg(Request $request)
-    {   
-
-        if(isset($_POST['manager']))
-        {
+    {  
             $validator = Validator::make($request->all(),[
 
                         'name'       => 'required',
-                        'email'      => 'required|unique|email',
-                        'manager'    => 'required',
+                        'email'      => 'required',
                         'phone'      => 'required',
                         'password'   => 'required',
 
                     ]);
 
-        }
-        else
-         {
-            
-             $validator = Validator::make($request->all(),[
-
-                        'name'       => 'required',
-                        'email'      => 'required|unique|email',
-                        'phone'      => 'required',
-                        'password'   => 'required',
-
-                    ]);
-
-        }
 
        
 
         if ($validator->passes()) 
         {
+            User::create([
+                            'name'      => $request->name,
+                            'email'     => $request->email,
+                            'phone'     => $request->phone,
+                            'password'  => $request->password,
+                            'type'      => $request->type,
+                            'agree'      => $request->agree,
+                            'subscribe' => $request->subscribe,
+                        ]);
 
             return response()->json(['success'=>'Вы авторизованы']);
             

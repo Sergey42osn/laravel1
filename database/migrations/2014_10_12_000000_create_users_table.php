@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('password');
             $table->string('subscribe');
+            $table->boolean('type');
+            $table->boolean('agree');
             $table->rememberToken();
             $table->timestamps();
         });

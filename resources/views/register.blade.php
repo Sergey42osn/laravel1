@@ -5,7 +5,9 @@
 <div class="g_123 layout-content-wrap"> <div class="l-content js-l-content clearfix">
   <div class="login-form">
  
- <form method="post" id="regform" class="form registration-form js-registration-form" novalidate="" autocomplete="off"> <h2 class="login-form-title">Регистрация</h2> <div class="form-fieldset form-fieldset_grid"> <label class="form-radio registration-form-radio-inline">
+ <form method="post" id="regform" class="form registration-form js-registration-form" novalidate="" autocomplete="off">
+  {{ csrf_field() }}
+  <h2 class="login-form-title">Регистрация</h2> <div class="form-fieldset form-fieldset_grid"> <label class="form-radio registration-form-radio-inline">
   <input class="js-registration-form-type" type="radio" name="type" value="0" tabindex="1" checked=""><span class="form-radio__label">Частное лицо</span> </label> <label class="form-radio registration-form-radio-inline">
   <input class="js-registration-form-type" type="radio" name="type" value="1" tabindex="1"> <span class="form-radio__label">Компания</span> </label> </div> <div class="form-fieldset form-fieldset_grid">
     <input type="text" maxlength="30" name="name" value="" placeholder="Ваше имя" required="" class="login-form-input js-registration-form-name" tabindex="2"> <div class="form-fieldset__error js-form-fieldset__error js-registration-form-name-error is-hidden"></div> <div class="form-fieldset__help js-form-fieldset__help js-registration-form-name-help">Чтобы общаться с покупателями в чате</div> </div> <div class="form-fieldset form-fieldset_grid registration-form-manager">
@@ -36,7 +38,7 @@
   </label>
 </div>
 <div class="form-fieldset form-fieldset_grid login-form-submit-fieldset">
-        {{ csrf_field() }}
+        
     <button id="button_reg" type="submit" class="button button-origin button-origin-green button-origin_large js-submit-button" tabindex="9">Зарегистрироваться</button>
 </div>
 <div class="registration-form-fields-helper js-smart-helper">
