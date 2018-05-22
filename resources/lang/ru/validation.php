@@ -121,6 +121,9 @@ return [
       'manager' => [
         'required' => 'Введите имя',
       ],
+      'email' => [
+        'unique' => 'Такой Email уже зарегестрирован',
+      ],
     ],
 
 

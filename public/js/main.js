@@ -115,6 +115,12 @@ jQuery( document ).ready(function() {
 
 		  	console.log(data);
 
+		  	if(data.success){
+		  		//$(location).attr('href', '/');
+
+		  		$('#modal-auth').fadeIn();
+		  	}
+
 		  	//$("#modal-auth").fadeOut();
 
 		  	//$(location).attr('href', '/profile');

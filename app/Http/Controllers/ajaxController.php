@@ -54,7 +54,7 @@ class ajaxController extends Controller
             $validator = Validator::make($request->all(),[
 
                         'name'       => 'required',
-                        'email'      => 'required',
+                        'email'      => 'required|email|unique:users',
                         'phone'      => 'required',
                         'password'   => 'required',
 
@@ -76,6 +76,7 @@ class ajaxController extends Controller
                         ]);
 
             return response()->json(['success'=>'Вы авторизованы']);
+
             
         }
 
