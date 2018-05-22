@@ -39,18 +39,21 @@ jQuery( document ).ready(function() {
 		}
 	});
 
-	$( "#button-login" ).click(function() {
-		//event.preventDefault()
+	$( "#button-login" ).click(function(e) {
+		e.preventDefault();
 		var postData = $( "#login-form" ).serialize();
 
+		console.log(postData);
+
 		$.ajax({
+	
 		  type: "POST",
-		  //dataType: 'json',
+		  dataType: 'json',
 		  url: '/authlogin',
 		  data: postData,
 		  success: function(data){
 
-		  	//console.log(data);
+		  	console.log(data);
 
 		  		if ($.isEmptyObject(data.error)) 
 		  		{
@@ -91,7 +94,7 @@ jQuery( document ).ready(function() {
 		  },
 		  error: function(data){
 
-		  
+		  console.log(data);
 		  	//.email["0"]
 
 		  	}

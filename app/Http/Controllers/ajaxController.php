@@ -27,7 +27,7 @@ class ajaxController extends Controller
     	if ($validator->passes()) 
     	{
 
-    		if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
 		      // Аутентификация успешна
 
     		return response()->json(['success'=>'Вы авторизованы']);
@@ -69,10 +69,10 @@ class ajaxController extends Controller
                             'name'      => $request->name,
                             'email'     => $request->email,
                             'phone'     => $request->phone,
-                            'password'  => $request->password,
+                            'password'  => bcrypt($request->password),
                             'type'      => $request->type,
-                            'agree'      => $request->agree,
-                            'subscribe' => $request->subscribe,
+                            'agree'     => $request->agree,
+                            'subscribe' => $request->subscribe
                         ]);
 
             return response()->json(['success'=>'Вы авторизованы']);
