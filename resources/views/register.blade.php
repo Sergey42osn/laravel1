@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 
+@section('addcss'){{URL::asset($css)}}@endsection
+
 @section('content')
 
 <div class="g_123 layout-content-wrap"> <div class="l-content js-l-content clearfix">

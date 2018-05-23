@@ -30,3 +30,5 @@ Route::get('/register','ajaxController@show');
 Route::post('/register','ajaxController@loginreg');
 
 Route::post('/authlogin','ajaxController@authlogin');
+
+Route::get('/additem','additemController@index')->name('additem');

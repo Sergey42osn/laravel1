@@ -1,4 +1,4 @@
-<div class='js-header' data-state='{"luri":"novokuznetsk","user_location_id":631430,"menu":{"catalog":{"title":"Объявления","link":"catalog","active":true},"shops":{"title":"Магазины","link":"shops"},"business":{"title":"Для бизнеса","link":"reklama\/magazin-na-avito"},"support":{"title":"Помощь","absoluteLink":"support.avito.ru"}},"categoryMenu":[{"title":"Авто","categoryId":"Obj_Category_ROOT_TRANSPORT"},{"title":"Недвижимость","categoryId":"Obj_Category_ROOT_REAL_ESTATE"},{"title":"Работа","categoryId":"Obj_Category_ROOT_JOB"},{"title":"Услуги","categoryId":"Obj_Category_ROOT_SERVICES"}],"alternativeCategoryMenu":null,"servicesClassName":"header-services","currentPage":"catalog","country":{"host":"www.avito.ru","country_slug":"rossiya","site_name":"Avito","productAds":{"name":"Avito Контекст","isPromoCodesEnabled":true},"delivery":{"name":"Avito Доставка"},"currency_sign":"₽"},"user":{"isAuthenticated":false,"id":0,"name":"","hasShop":false,"hasShopSubscription":false,"hasActiveDelivery":false,"isLegalPerson":false,"isLegal":null},"userAccount":{"balance":{"bonus":"","real":"0","total":"0"},"isSeparationBalance":null},"messenger":null,"verticalId":null,"constant":{"Obj_Category_VERTICAL_AUTO":0,"Obj_Category_VERTICAL_REALTY":1,"Obj_Category_VERTICAL_JOB":2,"Obj_Category_VERTICAL_SERVICES":3,"Obj_Category_ROOT_TRANSPORT":1,"Obj_Category_ROOT_REAL_ESTATE":4,"Obj_Category_ROOT_JOB":110,"Obj_Category_JOB_VACANCIES":111,"Obj_Category_JOB_RESUME":112,"Obj_Category_ROOT_SERVICES":114,"Money_Notification_View_Refund_Site_FROM_PARAM_NAME":"from","Money_Notification_View_Refund_Site_FROM_PAGE_POPUP":5},"commonCategories":{"Obj_Category_VERTICAL_AUTO":{"slug":null},"Obj_Category_VERTICAL_REALTY":{"slug":"transport"},"Obj_Category_VERTICAL_JOB":{"slug":"dlya_doma_i_dachi"},"Obj_Category_VERTICAL_SERVICES":{"slug":null},"Obj_Category_ROOT_TRANSPORT":{"slug":"transport"},"Obj_Category_ROOT_REAL_ESTATE":{"slug":"nedvizhimost"},"Obj_Category_ROOT_JOB":{"slug":"rabota"},"Obj_Category_JOB_VACANCIES":{"slug":"vakansii"},"Obj_Category_JOB_RESUME":{"slug":"rezume"},"Obj_Category_ROOT_SERVICES":{"slug":"predlozheniya_uslug"},"Money_Notification_View_Refund_Site_FROM_PARAM_NAME":{"slug":null},"Money_Notification_View_Refund_Site_FROM_PAGE_POPUP":{"slug":"lichnye_veschi"}},"headerInfo":null,"notifications":{"refund":null},"hideAddButton":null,"isNCEnabled":null,"isShowAvitoPro":false,"hasAutovasOffers":false,"isTestGroupAvitoPro":false,"isExtended":null,"isSticky":null,"isFilled":null,"isNoBottomBorder":null,"isHasRating":false,"isNoBottomMargin":true,"delivery":null,"experimentTNS622":null,"isHeartsEnabled":true,"now":1525438057,"_dashboard":{}}'><div class="header-root-32BPK   header-root_no-bottom-margin-7gPk3"><div class="header-services-2XcAz header-services"><div class="header-services-inner-37pha header-clearfix-2C_lO"><ul class="header-list-1QTjc header-services-nav-HNIx_ header-clearfix-2C_lO"><li class="header-services-nav-item-22BQy"><a
+<div class='js-header' data-state=''><div class="header-root-32BPK   header-root_no-bottom-margin-7gPk3"><div class="header-services-2XcAz header-services"><div class="header-services-inner-37pha header-clearfix-2C_lO"><ul class="header-list-1QTjc header-services-nav-HNIx_ header-clearfix-2C_lO"><li class="header-services-nav-item-22BQy"><a
 class="header-link-1PHO2 header-services-nav-link-1bw0t"
 href="/novokuznetsk"
 >Объявления</a></li><li class="header-services-nav-item-22BQy"><a
@@ -25,7 +25,7 @@ target="_blank" rel="noopener noreferrer" >Помощь</a>
 						<div class=" header-services-menu-item_username-ZhPzt">
 
 
-							<a id="modal-auth-a" class="header-services-menu-link-IZnN3" href="#login?next=%2Fprofile" data-marker="header/login-button">Вход и регистрация</a>
+							<a id="modal-auth-a" class="header-services-menu-link-IZnN3" href="#" data-marker="header/login-button">Вход и регистрация</a>
 						</div>
 
                     @else
@@ -73,7 +73,17 @@ target="_blank" rel="noopener noreferrer" >Помощь</a>
 </div>
 </div>
 <div class="header-basic-1Lwr-"><div class="header-basic-inner-3ZcvI header-clearfix-2C_lO"><div class="header-logo-2fq6a"><span class="logo-root-35OMU"><a class="logo-logo-zes49" href="/" title=&quot;Avito &amp;mdash; сайт объявлений&quot;></a></span></div><ul class="header-list-1QTjc header-categories-zVUjn"><li class="header-category-1Z_ya "><a class="header-link-1PHO2 header-category-link-2G0tv" href="/novokuznetsk/transport">Авто</a></li><li class="header-category-1Z_ya "><a class="header-link-1PHO2 header-category-link-2G0tv" href="/novokuznetsk/nedvizhimost">Недвижимость</a></li><li class="header-category-1Z_ya "><a class="header-link-1PHO2 header-category-link-2G0tv" href="/novokuznetsk/rabota">Работа</a></li><li class="header-category-1Z_ya "><a class="header-link-1PHO2 header-category-link-2G0tv" href="/novokuznetsk/predlozheniya_uslug">Услуги</a></li><li class="header-category-1Z_ya"><button class="header-button-7OJ_l header-link-1PHO2 header-category-link-2G0tv header-category-link_more-1aOhF"
-type="button" data-location-id="">ещё</button></li></ul><div class="header-button-wrapper-iwCvN"><a   href   class='header-button-add-item-2cgWl button-root-1ipaF button-root_size-m-32pBz button-root_design-primary-1huDW'
->Подать объявление</a></div></div><div
+type="button" data-location-id="">ещё</button></li></ul>
+
+ @if (!isset($url))
+
+<div class="header-button-wrapper-iwCvN">
+  <a href="{{ route('additem') }}" class='header-button-add-item-2cgWl button-root-1ipaF button-root_size-m-32pBz button-root_design-primary-1huDW'
+>Подать объявление</a>
+</div>
+
+@endif
+
+</div><div
 class="tooltip tooltip_bottom header-more-popup-wtpOv "
 ><div class="tooltip-arrow"></div><div></div></div></div></div></div>

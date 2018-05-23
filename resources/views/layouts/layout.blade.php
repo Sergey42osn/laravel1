@@ -15,8 +15,8 @@
  <link rel="stylesheet" href="https://www.avito.st/s/cc/938265cc9f7ad7b1c269f329726a4664cf4118de.css?847736c">
  <link rel="stylesheet" href="{{URL::asset('css/profile.css')}}">
  <link rel="stylesheet" href="{{URL::asset('css/fc1d5cd.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('css/22753828e34dc7.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('css/register.css')}}">
+<link rel="stylesheet" href="{{URL::asset('css/22753828e34dc7.css')}}">
+<link rel="stylesheet" href="@yield('addcss')">
  <link rel="stylesheet" href="https://www.avito.st/s/cc/b0c4e22a393111089881fc2a29ba1dd3528a2cc8.css?dca9f56">
  <link rel="stylesheet" href="https://www.avito.st/s/cc/4c14fcaaa39f933f28ce3fb3b550710891c91cf1.css?f75f2e5">
  <link rel="stylesheet" href="https://www.avito.st/s/cc/394d4cfb5fbf942bd378e77ffa6b2ea836e4f78e.css?ebe5943">
@@ -41,7 +41,6 @@
  <link rel="alternate" href="android-app&#x3A;&#x2F;&#x2F;com.avito.android&#x2F;ru.avito&#x2F;1&#x2F;items&#x3F;locationId&#x3D;631430" />
  <link rel="alternate" href="ios-app&#x3A;&#x2F;&#x2F;417281773&#x2F;ru.avito&#x2F;1&#x2F;items&#x3F;locationId&#x3D;631430" />
  <link rel="stylesheet" type="text/css" href="{{URL::asset('css/main.css')}}" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
    <link rel="stylesheet" href="https://www.avito.st/s/cc/e21097301d993bf263e29e88d91c9ca2f4f506eb.css?ea5d7e8"> </head> <body class="windows windows opera opera-opera "  id="catalog" >

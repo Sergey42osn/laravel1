@@ -12,7 +12,7 @@ class ajaxController extends Controller
 {
 	public function show()
 	{
-		return view('register');
+		return view('register',['css' => '/css/register.css']);
 	}
 
     public function authlogin(Request $request)
